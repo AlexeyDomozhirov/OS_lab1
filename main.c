@@ -506,7 +506,6 @@ void str_list_annotate_with_arch_and_deps(str_list *list) {
   if (!list || list->count == 0)
     return;
 
-  /* ключ = deps, для сортировки; arch читаем тут же */
   typedef struct {
     long key;
     char *str;
